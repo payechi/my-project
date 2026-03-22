@@ -75,3 +75,37 @@ export default defineConfig([
 ])
 ```
 
+
+## Deploy on Render.com
+
+1. Create a new Render Web Service: https://dashboard.render.com/new
+2. Link your GitHub/GitLab repo and select the branch (`master` or `main`).
+3. Set the build command:
+
+```bash
+yarn install && yarn build
+# or npm install && npm run build
+```
+
+4. Set the publish directory:
+
+```bash
+dist
+```
+
+5. (Optional) add environment variables:
+- `NODE_ENV=production`
+
+6. Click Deploy.
+
+### Example expected render.com output
+
+- `Build started`
+- `Installing dependencies`
+- `Running build command: yarn build` (or `npm run build`)
+- `Build succeeded`
+- `Publishing dist`
+- `Live URL: https://your-service-name.onrender.com`
+
+> If you want, include these lines in your `README` as "render.com deployment log output" for status tracking in your project docs.
+
