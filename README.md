@@ -76,6 +76,7 @@ export default defineConfig([
 ```
 
 
+
 ## Deploy on Render.com
 
 1. Create a new Render Web Service: https://dashboard.render.com/new
@@ -108,4 +109,5 @@ dist
 - `Live URL: https://your-service-name.onrender.com`
 
 > If you want, include these lines in your `README` as "render.com deployment log output" for status tracking in your project docs.
+
 
